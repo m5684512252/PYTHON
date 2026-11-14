@@ -93,7 +93,9 @@ print(s[0])#最小值
 # sum()函数:求和 len()函数:求长度
 print(sum(s)/len(s))#平均值
 """
+
 # 案例二
+"""
 num_list1 = [19, 23, 54, 64, 875, 20, 109, 232, 123, 54]
 num_list2 = [55, 80, 72, 35, 60, 123, 54, 29, 91]
 
@@ -107,3 +109,37 @@ for num in num_list1:
     if num not in new_list:
         new_list.append(num)
 print(new_list)
+"""
+
+# 案例二(简化版)
+"""
+num_list1 = [19, 23, 54, 64, 875, 20, 109, 232, 123, 54]
+num_list2 = [55, 80, 72, 35, 60, 123, 54, 29, 91]
+# 1.合并两个列表(解包)
+num_list=[*num_list1,*num_list2]#解包*(将列表解开为单独的元素)
+print(num_list)
+
+num_list1.sort()
+print(num_list1)
+new_list = []
+for num in num_list1:
+    if num not in new_list:
+        new_list.append(num)
+print(new_list)
+"""
+
+# 案例二(极简版)
+"""
+num_list1 = [19, 23, 54, 64, 875, 20, 109, 232, 123, 54]
+num_list2 = [55, 80, 72, 35, 60, 123, 54, 29, 91]
+
+num_list = num_list1+num_list2#列表相加(合并两个列表)
+print(num_list)
+num_list1.sort()
+print(num_list1)
+new_list = []
+for num in num_list1:
+    if num not in new_list:
+        new_list.append(num)
+print(new_list)
+"""
