@@ -35,6 +35,7 @@ print(s[5])#不能省略第一个冒号
 print(s[0:-2:1])#获取索引0-6的元素(反向索引)
 print(s[-1:-3:-1])#从后往前的切片(反向索引)
 """
+"""
 # ----------------- 列表 list 常用方法 ---------------------------
 # 列表定义
 s = [56, 90, 88, 65, 90, 100, 209, 72, 145]
@@ -76,3 +77,33 @@ print(s)
 # reverse(): 反转列表元素
 s.reverse()
 print(s)
+"""
+
+# 案例
+"""
+s = []
+for i in range(10):
+    num = int(input("请输入一个整数:"))
+    s.append(num)
+print(s)
+s.sort()
+print(s)#排序
+print(s[-1])#最大值
+print(s[0])#最小值
+# sum()函数:求和 len()函数:求长度
+print(sum(s)/len(s))#平均值
+"""
+# 案例二
+num_list1 = [19, 23, 54, 64, 875, 20, 109, 232, 123, 54]
+num_list2 = [55, 80, 72, 35, 60, 123, 54, 29, 91]
+
+for i in num_list2:
+    num_list1.append(i)
+print(num_list1)
+num_list1.sort()
+print(num_list1)
+new_list = []
+for num in num_list1:
+    if num not in new_list:
+        new_list.append(num)
+print(new_list)
