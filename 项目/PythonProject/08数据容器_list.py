@@ -143,3 +143,11 @@ for num in num_list1:
         new_list.append(num)
 print(new_list)
 """
+# 案例三
+num_list1=[]
+for i in range(1,21):
+    num_list1.append(i**2)
+print(num_list1)
+# 案例三(简)
+num_list2 = [i**2 for i in range(1,21)]#列表推导式
+print(num_list2)
