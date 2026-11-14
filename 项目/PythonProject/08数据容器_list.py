@@ -143,11 +143,28 @@ for num in num_list1:
         new_list.append(num)
 print(new_list)
 """
+
 # 案例三
+"""
 num_list1=[]
 for i in range(1,21):
     num_list1.append(i**2)
 print(num_list1)
+"""
+
 # 案例三(简)
+# 列表推导式:就是按照一定规则快速生成的一个列表的方法(语法格式:[要插入的值 for i in 序列/列表])
+"""
 num_list2 = [i**2 for i in range(1,21)]#列表推导式
 print(num_list2)
+"""
+
+# 案例四(列表推导式)
+num_list3=[]
+for m in range(10):
+    # a = int(input("请输入一个整数:"))#自己写的乐色代码,留个警示
+    # num_list3.append(a)
+    num_list3.append(int(input("请输入一个整数:")))#简单写法
+print(num_list3)
+num_list4=[i**2 for i in num_list3 if i % 2 == 0]#列表推导式
+print(num_list4)
